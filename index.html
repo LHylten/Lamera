@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>My AR Animation</title>
+  <title>My AR Animations</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .ar-button {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007aff; /* iOS style blue */
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.2s;
+    }
+
+    .ar-button:hover {
+      background-color: #005ecb;
+    }
+
+  </style>
 </head>
 <body>
-  <a rel="ar" href="hus_ar.usdz">
-    Click here to View Animation in AR
+  <a class="ar-button" rel="ar" href="my_animation.usdz">
+    View First Animation in AR
+  </a>
+
+  <a class="ar-button" rel="ar" href="my_second_animation.usdz">
+    View Second Animation in AR
   </a>
 </body>
 </html>
