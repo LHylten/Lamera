@@ -10,10 +10,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       background-color: #f0f0f0;
-      padding: 10px;
+      padding: 20px;
       box-sizing: border-box;
     }
 
@@ -49,6 +49,14 @@
       color: #555;
       line-height: 1.4;
     }
+
+    .project-video {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
   </style>
 </head>
 <body>
@@ -63,6 +71,11 @@
   <a class="ar-button" rel="ar" href="my_second_animation.usdz">
     View Static Modell In AR
   </a>
+
+  <video class="project-video" controls>
+    <source src="forwrads.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
 </body>
 </html>
